@@ -1,0 +1,11 @@
+.section {
+  @apply w-full max-w-full flex justify-center items-center border-b border-neutral-300 min-h-[90px] overflow-hidden mb-8;
+}
+
+.link {
+  @apply flex flex-col gap-1 max-w-[68px];
+
+  .username {
+    @apply w-full font-semibold text-center text-xs text-ellipsis overflow-hidden;
+  }
+}

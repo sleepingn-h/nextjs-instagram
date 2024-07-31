@@ -1,0 +1,7 @@
+.grid {
+  @apply relative w-full aspect-square;
+
+  .image {
+    @apply object-cover;
+  }
+}

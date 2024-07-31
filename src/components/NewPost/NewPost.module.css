@@ -1,0 +1,43 @@
+.section {
+  @apply w-full max-w-xl flex flex-col items-center mt-6;
+}
+
+.form {
+  @apply w-full flex flex-col mt-2;
+
+  .label {
+    @apply w-full h-60 flex flex-col items-center justify-center;
+
+    &.empty {
+      @apply border border-neutral-300 border-dashed;
+    }
+
+    .dragging {
+      @apply absolute inset-0 z-10 bg-neutral-800/50 pointer-events-none;
+    }
+
+    .file {
+      @apply flex flex-col items-center pointer-events-none;
+    }
+
+    .imageViewer {
+      @apply relative w-full aspect-square;
+
+      .image {
+        @apply object-cover;
+      }
+    }
+  }
+
+  .textarea {
+    @apply outline-none text-lg border border-neutral-300 -mt-[1px] p-4;
+  }
+
+  .button {
+    @apply my-8;
+  }
+}
+
+.error {
+  @apply w-full bg-red-100 text-red-600 text-center font-bold p-4 mb-4;
+}

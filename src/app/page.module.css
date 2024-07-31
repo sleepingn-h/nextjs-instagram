@@ -1,0 +1,11 @@
+.section {
+  @apply flex flex-col gap-8 md:flex-row;
+
+  .left {
+    @apply basis-3/4 min-w-0;
+  }
+
+  .right {
+    @apply basis-1/4;
+  }
+}

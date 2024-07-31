@@ -1,0 +1,23 @@
+.icons {
+  @apply flex justify-between py-4;
+}
+
+.details {
+  .likes {
+    @apply text-sm font-semibold mb-2;
+  }
+
+  :global {
+    .description {
+      @apply text-gray-900;
+
+      span {
+        @apply font-semibold mr-4;
+      }
+    }
+  }
+
+  .date {
+    @apply text-neutral-500 text-xs my-4;
+  }
+}

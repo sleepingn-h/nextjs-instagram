@@ -1,0 +1,27 @@
+.side {
+  @apply text-sm;
+
+  .info {
+    @apply flex items-center;
+  }
+
+  .text {
+    @apply ml-4;
+  }
+
+  .name {
+    @apply text-lg text-neutral-500 leading-4;
+  }
+
+  .username {
+    @apply font-bold;
+  }
+
+  .introduce {
+    @apply text-neutral-500 mt-8;
+  }
+
+  .copyright {
+    @apply font-semibold mt-8;
+  }
+}

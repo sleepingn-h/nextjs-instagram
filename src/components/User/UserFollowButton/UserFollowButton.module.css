@@ -1,0 +1,25 @@
+.followButton {
+  @apply relative;
+
+  .loader {
+    @apply absolute inset-0 flex justify-center items-center;
+  }
+}
+
+.button {
+  @apply border-none rounded-md py-2 px-8 text-white font-bold leading-4;
+
+  &.following {
+    @apply bg-sky-600;
+  }
+
+  &.unfollowing {
+    @apply bg-red-600;
+  }
+
+  &.updating {
+    span {
+      @apply opacity-0;
+    }
+  }
+}

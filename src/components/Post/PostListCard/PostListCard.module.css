@@ -1,0 +1,7 @@
+.image {
+  @apply w-full object-cover aspect-square;
+}
+
+.commentBtn {
+  @apply font-semibold my-2 text-sky-500 text-sm;
+}

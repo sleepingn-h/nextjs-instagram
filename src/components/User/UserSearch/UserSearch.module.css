@@ -1,0 +1,10 @@
+.section {
+  @apply flex flex-col items-stretch;
+}
+
+.form {
+  @apply w-full mb-4;
+  .input {
+    @apply w-full p-3 outline-none border border-gray-400;
+  }
+}

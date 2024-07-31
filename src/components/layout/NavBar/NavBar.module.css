@@ -1,0 +1,15 @@
+.header {
+  @apply sticky top-0 bg-white z-10 border-b;
+}
+
+.logo {
+  @apply text-3xl font-bold;
+}
+
+.nav {
+  @apply flex justify-between items-center px-6;
+}
+
+.ul {
+  @apply flex gap-4 items-center p-4;
+}

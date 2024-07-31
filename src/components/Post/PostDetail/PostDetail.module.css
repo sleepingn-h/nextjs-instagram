@@ -1,0 +1,39 @@
+.section {
+  @apply flex w-full h-full;
+}
+
+.imageWrapper {
+  @apply relative basis-3/5;
+
+  .image {
+    @apply object-cover;
+  }
+}
+
+.content {
+  @apply w-full basis-2/5 flex flex-col;
+
+  > * {
+    @apply px-2;
+  }
+
+  .comments {
+    @apply border-t border-gray-200 h-full overflow-y-auto py-4 mb-1 text-sm;
+
+    .list {
+      @apply flex items-center mb-2;
+
+      .item {
+        @apply ml-2 flex flex-col text-xs;
+
+        .username {
+          @apply font-semibold;
+        }
+
+        .comment {
+          @apply text-sm;
+        }
+      }
+    }
+  }
+}

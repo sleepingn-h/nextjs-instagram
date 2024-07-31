@@ -1,0 +1,15 @@
+.link {
+  @apply flex items-center gap-4 w-full border border-neutral-300 mb-2 p-4;
+
+  &:hover {
+    @apply border-neutral-700;
+  }
+
+  .user {
+    @apply text-xs leading-[1.25rem];
+
+    .userId {
+      @apply text-black text-base font-bold;
+    }
+  }
+}

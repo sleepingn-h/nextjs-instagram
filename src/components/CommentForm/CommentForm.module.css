@@ -1,0 +1,15 @@
+.form {
+  @apply flex items-center border-t border-neutral-300;
+
+  input {
+    @apply w-full ml-2 border-none outline-none p-3;
+  }
+
+  .comment {
+    @apply font-bold text-sky-600;
+
+    &:disabled {
+      @apply text-sky-300;
+    }
+  }
+}

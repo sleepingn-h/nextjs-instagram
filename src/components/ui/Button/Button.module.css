@@ -1,0 +1,31 @@
+.button {
+  @apply flex items-center text-base px-3 py-2;
+}
+
+.small {
+  @apply text-sm;
+}
+
+.big {
+  @apply text-2xl;
+}
+
+.colored {
+  @apply rounded-md bg-gradient-to-bl from-fuchsia-600 via-rose-500 to-amber-300 p-[0.15rem];
+
+  span {
+    @apply bg-white rounded-sm py-[0.3rem] px-3 transition-opacity;
+  }
+
+  &:hover span {
+    @apply opacity-90;
+  }
+}
+
+.basic {
+  @apply bg-rose-500 text-white flex items-center justify-center py-4;
+}
+
+.icon {
+  @apply text-lg;
+}

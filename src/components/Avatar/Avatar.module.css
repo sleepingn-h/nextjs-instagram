@@ -1,0 +1,47 @@
+.avatar {
+  @apply rounded-full flex justify-center items-center;
+
+  &.highlight {
+    @apply bg-gradient-to-bl from-fuchsia-600 via-rose-500 to-amber-300;
+  }
+
+  &:not(.highlight) {
+    @apply bg-neutral-200;
+  }
+
+  &.small {
+    @apply w-9 h-9;
+
+    .image {
+      @apply max-w-[calc(100%-2px)] max-h-[calc(100%-2px)];
+    }
+  }
+
+  &.medium {
+    @apply w-11 h-11;
+
+    .image {
+      @apply p-[0.2rem] max-w-[calc(100%-3px)] max-h-[calc(100%-3px)];
+    }
+  }
+
+  &.large {
+    @apply w-[68px] h-[68px];
+
+    .image {
+      @apply p-[0.2rem] max-w-[calc(100%-4px)] max-h-[calc(100%-4px)];
+    }
+  }
+
+  &.xl {
+    @apply w-[142px] h-[142px];
+
+    .image {
+      @apply p-[0.25rem] max-w-[calc(100%-4px)] max-h-[calc(100%-4px)];
+    }
+  }
+
+  .image {
+    @apply p-[0.1rem] bg-white rounded-full object-cover w-full h-full;
+  }
+}

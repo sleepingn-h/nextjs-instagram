@@ -1,0 +1,11 @@
+.portal {
+  @apply fixed top-0 left-0 bg-neutral-900/70 flex flex-col justify-center items-center w-dvw h-dvh z-50;
+}
+
+.content {
+  @apply bg-white w-4/5 h-3/5 max-w-7xl;
+}
+
+.button {
+  @apply fixed top-0 right-0 bg-gray-900 text-white text-lg p-2;
+}

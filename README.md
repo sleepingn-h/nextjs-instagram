@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Instantgram clone coding
 
-## Getting Started
+인스타그램 클론코딩 Instantgram입니다
 
-First, run the development server:
+## 왜 인스타그램 프로젝트?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+실무에 가까운 프로젝트가 어떤게 있을지 고민하였고, 사용자의 로그인 Authentication을 검증하고 하이브리드 웹 페이지를 어떻게 더 효율적으로 구성할 수 있는지 좋은 프로젝트라 생각함
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 작업기간
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2024. 7.  10 ~ 2024. 07. 24
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Skills
 
-## Learn More
+`TypeScript` `Next.js` `NextAuth.js` `SWR` `Sanity`
 
-To learn more about Next.js, take a look at the following resources:
+### 기능소개
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 로그인 : 구글 계정으로 로그인
+  - 검색 페이지를 제외한 모든 페이지는 로그인을 하여야 접근 가능
+  - 로그인 하지 않은 사용자가 검색 페이지를 제외한 페이지로 접근시 로그인페이지로 리다이렉트
+- 홈화면 :
+  - [좌측] 현재 로그인한 사용자가 팔로잉한 유저의 아바타 리스트를 보여줌
+  - [좌측]현재 로그인한 사용자 외에도 팔로잉한 유저의 포스트를 보여줌
+  - [우측] 현재 로그인한 사용자 정보를 보여줌
+- 포스트
+  - 포스트를 등록한 유저의 이미지와 아이디
+  - 좋아요, 북마크 버튼
+  - 코멘트: 작성 및 보여주기
+  - 상세보기
+- 사용자 검색
+  - 전체 사용자
+  - 사용자 이름 혹은 아이디로 솔팅
+- 포스트 작성
+  - 이미지 drag and drop
+  - 작성 완료되면 홈으로 리다이렉트
+- 유저 페이지
+  - 팔로우, 언팔로우 버튼
+  - 작성한 포스트
+  - 북마크한 포스트
+  - 좋아요 누른 포스트
