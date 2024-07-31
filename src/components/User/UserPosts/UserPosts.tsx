@@ -28,6 +28,7 @@ export default function UserPosts({ user: { username } }: Props) {
         {tabs.map(({ type, icon }) => (
           <li key={type}>
             <Button
+              size='small'
               className={`${styles.tab} ${type === query ? styles.active : ''}`}
               onClick={() => setQuery(type)}
             >

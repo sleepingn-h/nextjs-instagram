@@ -17,7 +17,7 @@ export default function PostModal({ children, onClose }: Props) {
         }
       }}
     >
-      <Button className={styles.button} onClick={() => onClose()}>
+      <Button size='small' className={styles.button} onClick={() => onClose()}>
         <CloseIcon />
         <span className='sr-only'>닫기</span>
       </Button>
