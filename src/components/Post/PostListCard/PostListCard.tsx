@@ -44,8 +44,8 @@ export default function PostListCard({ post, priority = false }: Props) {
           {text}
         </p>
         {comments > 1 && (
-          <Button className={styles.commentBtn} onClick={() => setOpenModal(true)}>
-            View all {comments} comments
+          <Button size='small' className={styles.commentBtn} onClick={() => setOpenModal(true)}>
+            <span>View all {comments} comments</span>
           </Button>
         )}
       </ActionBar>
