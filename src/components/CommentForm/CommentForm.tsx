@@ -27,7 +27,7 @@ export default function CommentForm({ onPostComment }: Props) {
         value={comment}
         onChange={(e) => setComment(e.target.value)}
       />
-      <Button className={styles.comment} type='submit' disabled={buttonDisabled}>
+      <Button size='small' className={styles.comment} type='submit' disabled={buttonDisabled}>
         post
       </Button>
     </form>
