@@ -9,6 +9,7 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.GOOGLE_OAUTH_SECRET || '',
     }),
   ],
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async signIn({ user: { id, email, name, image } }) {
       if (!email) return false;
@@ -24,7 +25,6 @@ export const authOptions: NextAuthOptions = {
     async session({ session, token }) {
       const user = session?.user;
 
-      // console.log('session: ', session);
       if (user) {
         session.user = {
           ...user,

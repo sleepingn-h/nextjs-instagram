@@ -1,6 +1,5 @@
 import { SearchUser } from '@/model/user';
 import { client } from './sanity';
-// https://www.sanity.io/docs/groq
 
 type OAuthUser = {
   id: string;
@@ -24,8 +23,6 @@ export async function addUser({ id, username, email, name, image }: OAuthUser) {
   });
 }
 
-// 2. 백엔드에서는 현재 로그인된 사용자의 세션 정보를 이용해서
-// 3. 백엔드에서 사용자의 상세 정보를 Sanity에서 가지고 옴 (followings)
 export async function getUserByUsername(username: string) {
   return client.fetch(
     `*[_type =='user' && username=="${username}"][0]{
@@ -99,7 +96,6 @@ export async function removeBookmark(userId: string, postId: string) {
     .commit();
 }
 
-// https://www.sanity.io/docs/js-client#multiple-mutations-in-a-transaction
 export async function follow(myId: string, targetId: string) {
   return client
     .transaction() //

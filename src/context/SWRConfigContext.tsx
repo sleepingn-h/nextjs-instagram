@@ -1,7 +1,5 @@
 'use client';
 
-// https://swr.vercel.app/docs/global-configuration
-
 import { SWRConfig } from 'swr';
 
 type Props = {

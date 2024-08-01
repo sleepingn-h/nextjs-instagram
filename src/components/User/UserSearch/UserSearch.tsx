@@ -9,11 +9,8 @@ import styles from './UserSearch.module.css';
 import useDebounce from '@/hooks/debounce';
 
 export default function UserSearch() {
-  // 1. 사용자가 키워드를 입력하면 /api/search/${keyword}를 이용해서 키워드를 검색
   const [keyword, setKeyword] = useState('');
   const debouncedKeyword = useDebounce(keyword);
-  // 2. 검색하는 keyword가 있다면 -> 유저네임이나, 네임
-  //    검색하는 keyword가 없다면 -> 전체 사용자
   const { data: users, isLoading, error } = useSWR<SearchUser[]>(`/api/search/${debouncedKeyword}`);
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();

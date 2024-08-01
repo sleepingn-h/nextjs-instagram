@@ -7,7 +7,6 @@ import SideBar from '@/components/SideBar/SideBar';
 import styles from './page.module.css';
 
 export default async function HomePage() {
-  // 이 페이지는 SSR로 로딩된다.
   const session = await getServerSession(authOptions);
   const user = session?.user;
 

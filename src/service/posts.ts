@@ -1,7 +1,6 @@
 import post from '../../sanity-studio/schemaTypes/post';
 import { SimplePost } from '@/model/post';
 import { assetsURL, client, urlFor } from './sanity';
-// https://www.sanity.io/docs/image-url
 
 const simplePostProjection = `
   ...,
