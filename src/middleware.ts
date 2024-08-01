@@ -1,8 +1,6 @@
 import { getToken } from 'next-auth/jwt';
 import { NextRequest, NextResponse } from 'next/server';
 
-export { default } from 'next-auth/middleware';
-
 export async function middleware(req: NextRequest) {
   const token = await getToken({ req });
 
@@ -14,6 +12,7 @@ export async function middleware(req: NextRequest) {
     const { pathname, search, origin, basePath } = req.nextUrl;
     const signInUrl = new URL(`${basePath}/auth/signin`, origin);
     signInUrl.searchParams.append('callbackUrl', `${basePath}${pathname}${search}`);
+    console.log('MIDDELWARE!!!', pathname, basePath, origin);
 
     return NextResponse.redirect(signInUrl);
   }
