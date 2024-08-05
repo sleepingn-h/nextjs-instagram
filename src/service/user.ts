@@ -1,5 +1,7 @@
-import { SearchUser } from '@/model/user';
 import { client } from './sanity';
+import path from 'path';
+import { readFile } from 'fs/promises';
+import { SearchUser } from '@/model/user';
 
 type OAuthUser = {
   id: string;
@@ -7,6 +9,10 @@ type OAuthUser = {
   name: string;
   username: string;
   image?: string | null;
+};
+
+export type ReadMeData = {
+  content: string;
 };
 
 export async function addUser({ id, username, email, name, image }: OAuthUser) {
@@ -116,4 +122,11 @@ export async function unfollow(myId: string, targetId: string) {
     .patch(myId, (user) => user.unset([`following[_ref=="${targetId}"]`]))
     .patch(targetId, (user) => user.unset([`followers[_ref=="${myId}"]`]))
     .commit({ autoGenerateArrayKeys: true });
+}
+
+export async function getReadMe(): Promise<ReadMeData> {
+  const filePath = path.join(process.cwd(), 'README.md');
+  const content = await readFile(filePath, 'utf-8');
+
+  return { content };
 }

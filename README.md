@@ -1,4 +1,4 @@
-# Instantgram clone coding
+# Instangram clone coding
 
 인스타그램 클론코딩 Instantgram입니다
 
@@ -6,11 +6,11 @@
 
 실무에 가까운 프로젝트가 어떤게 있을지 고민하였고, 사용자의 로그인 Authentication을 검증하고 하이브리드 웹 페이지를 어떻게 더 효율적으로 구성할 수 있는지 좋은 프로젝트라 생각함
 
-### 작업기간
+## 작업기간
 
--2024. 7. 10 ~ 2024. 07. 24
+\- 2024. 7. 10 ~ 2024. 07. 24
 
-### Skills
+## Skills
 
 ![Next.js](https://img.shields.io/badge/-Nextjs-000000?style=for-the-badge&logo=Next.js&logoColor=ffffff)
 ![React](https://img.shields.io/badge/-React-222222?style=for-the-badge&logo=react)
@@ -22,7 +22,7 @@
 ![Sanity](https://img.shields.io/badge/-Sanity-F03E2F?style=for-the-badge&logo=Sanity&logoColor=ffffff)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=ffffff)
 
-### 기능소개
+## 기능소개
 
 - 로그인 : 구글 계정으로 로그인
   - 검색 페이지를 제외한 모든 페이지는 로그인을 하여야 접근 가능

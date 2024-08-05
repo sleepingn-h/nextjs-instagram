@@ -1,0 +1,23 @@
+.portal {
+  @apply fixed inset-0 z-20 bg-black/80 flex flex-col justify-center;
+
+  .button {
+    @apply absolute top-0 right-0 bg-black w-14 h-14 text-white p-2 flex items-center justify-center;
+
+    .icon {
+      @apply text-2xl;
+    }
+  }
+
+  .content {
+    @apply bg-white p-10 max-w-screen-lg max-h-[80%] m-auto overflow-y-auto;
+
+    > div {
+      @apply text-base;
+    }
+
+    img {
+      @apply inline my-[1px] mx-0;
+    }
+  }
+}
