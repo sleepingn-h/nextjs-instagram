@@ -16,7 +16,6 @@ export default function Signin({ providers, callbackUrl }: Props) {
           <span>Sign in with {name}</span>
         </Button>
       ))}
-      <p>id: jooha099@gmail.com / pw: i0T0XzZrvqWi02D</p>
     </>
   );
 }

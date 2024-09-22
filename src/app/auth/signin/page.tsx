@@ -34,6 +34,7 @@ export default async function SigninPage({ searchParams: { callbackUrl } }: Prop
       <section className={styles.section}>
         <Signin providers={providers} callbackUrl={callbackUrl ?? '/'} />
       </section>
+      <p className={styles.info}>id: jooha099@gmail.com / pw: i0T0XzZrvqWi02D</p>
       <ReadMe content={content} />
     </>
   );

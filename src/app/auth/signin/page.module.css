@@ -1,3 +1,7 @@
 .section {
   @apply flex justify-center items-center h-[80vh];
 }
+
+.info {
+  text-align: center;
+}
