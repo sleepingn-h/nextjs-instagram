@@ -13,9 +13,9 @@ type Props = {
 };
 
 export default function UserFollowButton({ user }: Props) {
+  const router = useRouter();
   const { username } = user;
   const { user: loggedInUser, toggleFollow } = useMe();
-  const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [isFetching, setIsFetching] = useState(false);
   const isUpdating = isPending || isFetching;

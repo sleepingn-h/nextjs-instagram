@@ -2,6 +2,11 @@
 
 인스타그램 클론코딩 Instantgram입니다
 
+## Google login
+
+Id: jooha099@gmail.com
+Password: i0T0XzZrvqWi02D
+
 ## 왜 인스타그램 프로젝트?
 
 실무에 가까운 프로젝트가 어떤게 있을지 고민하였고, 사용자의 로그인 Authentication을 검증하고 하이브리드 웹 페이지를 어떻게 더 효율적으로 구성할 수 있는지 좋은 프로젝트라 생각함
